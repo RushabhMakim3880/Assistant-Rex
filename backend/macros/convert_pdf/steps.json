@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "action": "click",
+        "x_original": 1218,
+        "y_original": 1046,
+        "button": "Button.left",
+        "image": "step_1.png",
+        "ts": 1769118033.6773577
+    },
+    {
+        "id": 2,
+        "action": "click",
+        "x_original": 139,
+        "y_original": 171,
+        "button": "Button.left",
+        "image": "step_2.png",
+        "ts": 1769118035.4532032
+    },
+    {
+        "id": 3,
+        "action": "click",
+        "x_original": 175,
+        "y_original": 435,
+        "button": "Button.left",
+        "image": "step_3.png",
+        "ts": 1769118037.5819867
+    },
+    {
+        "id": 4,
+        "action": "click",
+        "x_original": 713,
+        "y_original": 280,
+        "button": "Button.left",
+        "image": "step_4.png",
+        "ts": 1769118040.118297
+    },
+    {
+        "id": 5,
+        "action": "click",
+        "x_original": 697,
+        "y_original": 421,
+        "button": "Button.left",
+        "image": "step_5.png",
+        "ts": 1769118041.9176018
+    },
+    {
+        "id": 6,
+        "action": "click",
+        "x_original": 1368,
+        "y_original": 302,
+        "button": "Button.left",
+        "image": "step_6.png",
+        "ts": 1769118043.5895398
+    },
+    {
+        "id": 7,
+        "action": "click",
+        "x_original": 857,
+        "y_original": 541,
+        "button": "Button.left",
+        "image": "step_7.png",
+        "ts": 1769118044.901349
+    },
+    {
+        "id": 8,
+        "action": "click",
+        "x_original": 1887,
+        "y_original": 29,
+        "button": "Button.left",
+        "image": "step_8.png",
+        "ts": 1769118053.2372806
+    },
+    {
+        "id": 9,
+        "action": "click",
+        "x_original": 1500,
+        "y_original": 143,
+        "button": "Button.left",
+        "image": "step_9.png",
+        "ts": 1769118056.9259012
+    },
+    {
+        "id": 10,
+        "action": "click",
+        "x_original": 1174,
+        "y_original": 882,
+        "button": "Button.left",
+        "image": "step_10.png",
+        "ts": 1769118059.0617206
+    }
+]

@@ -1,0 +1,23 @@
+{
+    "exclude": [
+        "**/node_modules",
+        "**/venv",
+        "**/venv_old",
+        "**/dist-backend",
+        "**/dist-frontend",
+        "**/build-backend",
+        "**/release",
+        "**/electron_dist_backup",
+        "**/clean_source",
+        "**/projects",
+        "**/assets",
+        "**/docs",
+        "**/public",
+        "**/printer_profiles"
+    ],
+    "reportMissingImports": true,
+    "reportMissingTypeStubs": false,
+    "pythonVersion": "3.10",
+    "pythonPlatform": "Windows",
+    "typeCheckingMode": "basic"
+}

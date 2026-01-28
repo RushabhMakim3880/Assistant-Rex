@@ -1,0 +1,75 @@
+{
+  "name": "assistant-rex",
+  "version": "1.1.0",
+  "description": "R.E.X. - Robotic Executive Xr Assistant",
+  "main": "electron_src/main.js",
+  "scripts": {
+    "dev": "concurrently -k \"vite --force\" \"wait-on tcp:5173 && node_modules\\electron\\dist\\electron.exe .\"",
+    "dev:vite": "vite --force",
+    "build": "vite build --outDir dist-frontend",
+    "build:win": "npm run build && npm run build:backend && electron-builder --win",
+    "build:backend": "venv\\Scripts\\python -m PyInstaller --noconfirm --onefile --console --name \"server\" --add-data \"backend/skills;skills\" --add-data \"backend/printer_profiles;printer_profiles\" --add-data \"backend/face_landmarker.task;.\" --hidden-import \"engineio.async_drivers.asgi\" --hidden-import \"uvicorn.loops.asyncio\" --hidden-import \"uvicorn.protocols.http.h11_impl\" --hidden-import \"uvicorn.lifespan.on\" --hidden-import \"socketio\" --workpath \"build-backend\" --distpath \"dist-backend\" backend/server.py",
+    "start": "npx electron ."
+  },
+  "keywords": [],
+  "author": "Rushabh Makim",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/is-prop-valid": "^1.4.0",
+    "@mediapipe/tasks-vision": "^0.10.22-rc.20250304",
+    "@react-three/drei": "^9.99.0",
+    "@react-three/fiber": "^8.15.16",
+    "@types/three": "^0.160.0",
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.300.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.3.8",
+    "recharts": "^3.7.0",
+    "socket.io-client": "^4.7.4",
+    "tailwind-merge": "^2.2.0",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^28.2.0",
+    "electron-builder": "^26.4.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.0",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.rushabhmakim.rex",
+    "productName": "R.E.X",
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "runAfterFinish": true
+    },
+    "extraResources": [
+      {
+        "from": "dist-backend/server.exe",
+        "to": "backend/server/server.exe",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "files": [
+      "dist-frontend/**/*",
+      "electron/**/*",
+      "package.json"
+    ]
+  }
+}

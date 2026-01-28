@@ -1,0 +1,22 @@
+{
+    "face_auth_enabled": false,
+    "tool_permissions": {
+        "generate_cad": false,
+        "run_web_agent": true,
+        "write_file": true,
+        "read_directory": true,
+        "read_file": true,
+        "create_project": true,
+        "switch_project": true,
+        "list_projects": true,
+        "desktop_qa": true,
+        "autonomous_control": true,
+        "control_light": false,
+        "discover_printers": false,
+        "print_stl": false,
+        "iterate_cad": false
+    },
+    "printers": [],
+    "kasa_devices": [],
+    "camera_flipped": true
+}

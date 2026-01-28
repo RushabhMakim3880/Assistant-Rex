@@ -1,0 +1,11 @@
+[
+    {
+        "id": "welcome_task",
+        "title": "Welcome to R.E.X. Objectives",
+        "description": "Start by asking R.E.X. to add a new task for you! Try 'REX, add a task to check my emails'.",
+        "due_date": null,
+        "priority": "low",
+        "status": "completed",
+        "created_at": "2026-01-22T18:30:00.000Z"
+    }
+]

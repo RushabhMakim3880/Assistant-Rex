@@ -1,0 +1,98 @@
+node_modules/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+# Environment & Secrets
+.env
+.env.*
+env_prod
+backend/credentials.json
+backend/token.json
+token.json
+credentials.json
+*.pem
+*.key
+*.p12
+
+venv/
+.venv/
+env/
+venv_old/
+venv_backup/
+node_modules/
+dist/
+build/
+release/
+out/
+bin/
+obj/
+
+
+# Visual Assets & DBs
+backend/visual_buffer/
+backend/visual_memory.db
+backend/memory_db/
+semantic_search.db
+debug_screenshot.png
+*.db
+*.jpg
+*.png
+*.task
+*.exe
+
+# Build & Dist Artifacts
+node_modules/
+dist/
+build/
+release/
+out/
+bin/
+obj/
+dist-frontend/
+dist-backend/
+build-backend/
+electron_dist_backup/
+electron_src_backup/
+*backup*/
+*.pyd
+*.dll
+*.so
+*.dylib
+*.log
+*.sqlite3
+*.task
+
+# Build Artifacts
+backend/build/
+backend/dist/
+backend/*.spec
+
+# Node.js
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Electron
+dist-electron/
+release/
+out/
+
+# IDE
+.vscode/
+.idea/
+
+# Visual Assets & DBs
+backend/visual_buffer/
+backend/visual_memory.db
+semantic_search.db
+debug_screenshot.png
+*.db
+*.jpg
+*.png
+
+# OS
+.DS_Store
+Thumbs.db

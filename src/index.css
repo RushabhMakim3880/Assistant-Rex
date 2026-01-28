@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+  margin: 0;
+  background-color: #000;
+  overflow: hidden;
+}
+
+/* Custom Scrollbar Styling - Holographic Theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(6, 182, 212, 0.05);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(6, 182, 212, 0.4), rgba(34, 211, 238, 0.6));
+  border-radius: 4px;
+  border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(6, 182, 212, 0.6), rgba(34, 211, 238, 0.8));
+  box-shadow: 0 0 8px rgba(6, 182, 212, 0.5);
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(6, 182, 212, 0.5) rgba(6, 182, 212, 0.05);
+}
+
+/* Custom Scrollbar Hide (for specific elements) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.mask-image-gradient {
+  mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Voice Reactivity */
+.voice-glow {
+  filter: drop-shadow(0 0 calc(var(--voice-intensity, 0) * 15px) rgba(34, 211, 238, 0.6));
+}
+
+.voice-border {
+  border-color: rgba(34, 211, 238, max(0.2, var(--voice-intensity, 0)));
+  box-shadow: 0 0 calc(var(--voice-intensity, 0) * 20px) rgba(34, 211, 238, 0.3) inset;
+  transition: all 0.1s ease-out;
+}
+
+.voice-text {
+  text-shadow: 0 0 calc(var(--voice-intensity, 0) * 10px) rgba(34, 211, 238, 0.8);
+}
+
+/* Hacker Theme Styles */
+.hacker-theme {
+  background-color: black !important;
+  color: #00ff41 !important;
+}
+
+.hacker-theme * {
+  border-color: rgba(0, 255, 65, 0.3) !important;
+  color: #00ff41 !important;
+  font-family: 'Share Tech Mono', monospace !important;
+}
+
+.hacker-theme .text-cyan-400,
+.hacker-theme .text-cyan-500,
+.hacker-theme .text-cyan-600,
+.hacker-theme .text-cyan-700,
+.hacker-theme .text-cyan-100 {
+  color: #00ff41 !important;
+}
+
+.hacker-theme .border-cyan-500,
+.hacker-theme .border-cyan-400,
+.hacker-theme .border-cyan-900,
+.hacker-theme .border-white\/10 {
+  border-color: #00ff41 !important;
+}
+
+.hacker-theme .bg-cyan-500\/10,
+.hacker-theme .bg-black\/40,
+.hacker-theme .bg-black\/20,
+.hacker-theme .bg-black\/80,
+.hacker-theme .bg-gray-900\/80 {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+}
+
+.hacker-theme .shadow-2xl {
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.2) !important;
+}
+
+.hacker-theme ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(0, 255, 65, 0.4), rgba(0, 255, 65, 0.6)) !important;
+}
+
+.hacker-theme ::-webkit-scrollbar-track {
+  background: rgba(0, 255, 65, 0.05) !important;
+}

@@ -1,0 +1,8 @@
+
+{
+  "name": "R.E.X. Organic Core Interface",
+  "description": "A high-fidelity neural interface for the R.E.X. AI system, featuring real-time voice interaction, neural log streaming, and fluidic core visualizations.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
